@@ -1,0 +1,16 @@
+<div id="container">
+    
+    <h1>TEBAK KUY</h1> 
+    <link rel="stylesheet" href="design.gamesfarhan.css">
+    <script src="games.js"></script>
+
+
+        <div id="pesan"></div>
+        <form id="userInput" name="userInput" method="post">
+            <input id="input_txt" name="limitedtextfield" type="text" onKeyDown="limitText(this.form.limitedtextfield,3);" onKeyUp="limitText(this.form.limitedtextfield,3);" maxlength="3">
+            <br>
+            <button id="tanda_tanya" type="button" onclick="tandatanya()">?</button>
+            <br>
+            <button id="reset" type="button" onclick="initGame()">&#x21BB;</button>
+        </form>
+    </div>
